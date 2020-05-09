@@ -1,0 +1,63 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: calc(10px + 0.33vw);
+  -webkit-font-smoothing: antialiased;
+  padding: 5vh 10vw;
+  padding-right: 30vw;
+  color: #121314;
+}
+header {
+  font-size: 3.2rem;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: bolder;
+  background: url('../img/unsplash.jpg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0,0,0,.2);
+}
+
+@media only screen and (max-width: 600px){
+  body {
+    padding:2vh 1vw;
+    color: #121314;
+  }
+}
+
+main {
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-color: currentcolor;
+  text-decoration-thickness: auto;
+  color: #121314;
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 60%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, .8, .13, 1);
+    transition-property: top;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0.8, 0.13, 1);
+    transition-delay: 0.3s;
+  background-color: rgba(79, 19, 141, 0.5);
+}
+
+a:hover::after {
+    top: 0%;
+}
+b {
+  font-weight: 800;
+}
