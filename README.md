@@ -7,7 +7,7 @@ stacks: "HTML, CSS, MAVOSCRIPT & JAVASCRIPT"
 
 # UKUEJUBOLAKEL.VIN
 
-ukuejubola.vin is a small project to talk about my self sharing my background, education and other interesting things about Ukuejubola Kelvin.
+ukuejubola.vin is a small project to talk about me self sharing my background, education and other interesting things about Ukuejubola Kelvin.
 
 ## OPENSOURCE
 
