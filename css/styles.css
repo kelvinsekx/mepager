@@ -1,3 +1,8 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 body {
   font-family: 'Fira Sans', sans-serif;
   font-size: calc(10px + 0.33vw);
@@ -6,11 +11,30 @@ body {
   padding-right: 30vw;
   color: #121314;
 }
+section{
+  margin: 2em 0;
+}
+h2{
+  display: inline-block;
+  background-color: rgb(172, 160, 160);
+  color: #fff;
+  font-size: 1.2rem;
+  padding:0.4em 0.6em;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+#Wqer-HeadEr{
+  font-size:2rem;
+}
+p{
+  margin: 0.7rem 0
+}
 header {
-  font-size: 3.2rem;
+  font-size: 100%;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
+  display: inline;
   font-weight: bolder;
   background: url('../img/unsplash.jpg');
   background-clip: text;
