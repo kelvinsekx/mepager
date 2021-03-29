@@ -3,20 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://get.mavo.io/mavo.css">
+    <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"></link>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet"> 
     <script src="https://get.mavo.io/mavo.js"></script>
     <title>Ukuejubola Kelvin</title>
   </head>
   <body>
+    <div mv-app="app" mv-expressions="{ }" mv-storage="https://github.com/kelvinsekx">
     <header>
       <span id="Wqer-HeadEr">Hi, I am </span><h1>Kelvin Ukuejubola,</h1>
     </header>
 
-    <main>
-      <p>  I am an economist,educator and software developer. And a graduate of the University of Ibadan exploring the web.</p>
+    <section>
+      <h4>Adjust bio length</h4>
+      <div property="bio" hidden></div>
+      <button mv-action="set(bio, shortest)">shortest</button>
+        <button mv-action="set(bio, shorter)">shorter</button>
+        <button>short</button>
+      <div>
+        <p mv-if="bio = shortest">  I am an economist,educator and software developer. And a graduate of the University of Ibadan exploring the web.</p>
+        <p mv-if="bio = 'shorter'">  I am an economist,educator and software developer.</p>
+      </div>
+    </section>
 
+    <main>
       <section>
         <h2>Background</h2>
       <p>My mum is Esan, Edo state and Dad from Warri, Delta State.  In that regard, I am a warri man, precisely from Itsekiri, however with a twist. I cant remember ever stepping a feet in warri. I grew up in lagos-ibadan. I am more Yoruba. </p>
@@ -58,6 +69,7 @@
       <p>Pardon, My full name is <b>Ukuejubola Kelvin Oritsetimeyin</b>. With the popular alias <b>kelvinsekx</b>. Here is a link to my 
         <a href="asset/kelvinResume.pdf">cv</a></p>
     </main>
+  </div>
     <footer>This single page is built, maintained and written by Ukuejubola Kelvin together with all the agape love there is. &copy;<span id="date"></span></footer>
 
     <script type="text/javascript">
